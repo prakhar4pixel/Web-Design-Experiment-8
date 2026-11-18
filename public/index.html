@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books — Experiment 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Books</h1>
+      <p class="meta">Express.js RESTful API &middot; CRUD</p>
+    </header>
+
+    <form id="bookForm" class="form">
+      <input type="text" id="titleInput" placeholder="Book title" required />
+      <input type="text" id="authorInput" placeholder="Author" required />
+      <div class="form-buttons">
+        <button type="submit" id="submitBtn">Add</button>
+        <button type="button" id="cancelBtn" hidden>Cancel</button>
+      </div>
+    </form>
+
+    <div class="list-header">
+      <span id="count">0 books</span>
+    </div>
+
+    <ul id="booksList" class="books"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
